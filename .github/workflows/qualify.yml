@@ -1,4 +1,4 @@
-name: Qualify API Gateway candidate
+name: Qualify FlowAI API Gateway
 run-name: Qualify api-gateway at ${{ inputs.expected_source_sha }}
 
 on:
