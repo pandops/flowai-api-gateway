@@ -20,14 +20,5 @@ full commit SHA and the nine publisher SHAs. The workflow stages the Gitea
 selector's declared schema inputs under the runner's temporary directory.
 It verifies each raw body by SHA-256, runs the Go unit suite, runs the tagged
 suite with owned PostgreSQL and NATS containers, verifies their absence, and
-builds the production image locally on the runner.
-
-For local qualification, export the publisher SHA inputs using the uppercase
-underscore names in the workflow. Run
-`python3 qualification/stage-contracts.py "$FLOWAI_CONTRACT_FIXTURE_DIR"`
-with an absolute, empty fixture directory outside the checkout. Then run
-`go test -mod=readonly -count=1 ./...` and
-`bash qualification/integration.sh` with the same fixture directory exported.
-The integration script provisions an isolated database for
-`TestMappingStoreAtomicRegistration`, whose default invocation skips when
-no PostgreSQL URL is supplied.
+builds the production image locally on the runner. The integration step
+provisions an isolated database for `TestMappingStoreAtomicRegistration`.
