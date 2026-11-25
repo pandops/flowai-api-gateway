@@ -1,0 +1,578 @@
+{
+  "schemas": {
+    "svc/audit/schemas/error.reply.schema.json": [
+      "audit",
+      "api-gateway"
+    ],
+    "svc/audit/schemas/ui.get.reply.schema.json": [
+      "audit",
+      "api-gateway"
+    ],
+    "svc/audit/schemas/ui.get.request.schema.json": [
+      "audit",
+      "api-gateway"
+    ],
+    "svc/audit/schemas/ui.list.reply.schema.json": [
+      "audit",
+      "api-gateway"
+    ],
+    "svc/audit/schemas/ui.list.request.schema.json": [
+      "audit",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/error.reply.schema.json": [
+      "env-registry",
+      "api-gateway",
+      "executor_docker_openhands",
+      "executor_k8s_openhands"
+    ],
+    "svc/env-registry/schemas/ui.create-secret.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.create-secret.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.create.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.create.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.delete.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.delete.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.get.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.get.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list-revisions.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list-revisions.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list-secret-versions.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list-secret-versions.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.list.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.replace-secret.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.replace-secret.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.replace.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.replace.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.revoke-secret.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.revoke-secret.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.task-parameters.reply.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/env-registry/schemas/ui.task-parameters.request.schema.json": [
+      "env-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/error.reply.schema.json": [
+      "executor-registry",
+      "api-gateway",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "flow-registry",
+      "model-registry"
+    ],
+    "svc/executor-registry/schemas/ui.create.reply.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.create.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.delete.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.get.reply.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.get.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.list-execution-tags.reply.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.list-execution-tags.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.list.reply.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.list.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.reissue.reply.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/executor-registry/schemas/ui.reissue.request.schema.json": [
+      "executor-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/defs.schema.json": [
+      "flow-registry",
+      "admin-panel",
+      "api-gateway",
+      "audit",
+      "env-registry",
+      "journal",
+      "model-registry",
+      "task-manager"
+    ],
+    "svc/flow-registry/schemas/error.reply.schema.json": [
+      "flow-registry",
+      "admin-panel",
+      "api-gateway",
+      "env-registry",
+      "model-registry",
+      "task-manager"
+    ],
+    "svc/flow-registry/schemas/ui.flow-create.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-create.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-get.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-get.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-preview.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-preview.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-replace.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flow-replace.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flows-list.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.flows-list.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-get.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-get.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-list.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-list.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-replace.reply.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/flow-registry/schemas/ui.llm-settings-replace.request.schema.json": [
+      "flow-registry",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/defs.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/error.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/frame.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.control-events.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.control-events.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.dashboard.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.dashboard.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.executor-events.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.executor-events.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.executor-states.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.executor-states.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.task-events.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.task-events.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.task-logs.reply.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/journal/schemas/ui.task-logs.request.schema.json": [
+      "journal",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/defs.schema.json": [
+      "model-registry",
+      "api-gateway",
+      "audit",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "flow-registry",
+      "journal",
+      "task-manager"
+    ],
+    "svc/model-registry/schemas/edge.litellm-key.reply.schema.json": [
+      "model-registry",
+      "api-gateway",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "flow-registry",
+      "journal",
+      "task-manager"
+    ],
+    "svc/model-registry/schemas/error.reply.schema.json": [
+      "model-registry",
+      "api-gateway",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "flow-registry"
+    ],
+    "svc/model-registry/schemas/ui.model-archive.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-archive.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-create.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-create.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-get.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-get.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-unarchive.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-unarchive.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-update.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.model-update.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.models-list.reply.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/model-registry/schemas/ui.models-list.request.schema.json": [
+      "model-registry",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/error.reply.schema.json": [
+      "source-controller",
+      "api-gateway",
+      "flow-registry"
+    ],
+    "svc/source-controller/schemas/ui.sources-create.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-create.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-disable.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-disable.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-get.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-get.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-list.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-list.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-rotate-key.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-rotate-key.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-settings-get.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-settings-get.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-settings-put.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-settings-put.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-unblock-polling.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-unblock-polling.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-update-implementation.reply.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/source-controller/schemas/ui.sources-update-implementation.request.schema.json": [
+      "source-controller",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/defs.schema.json": [
+      "task-manager",
+      "admin-panel",
+      "api-gateway",
+      "audit",
+      "env-registry",
+      "executor-registry",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "journal",
+      "model-registry",
+      "source-controller"
+    ],
+    "svc/task-manager/schemas/error.reply.schema.json": [
+      "task-manager",
+      "admin-panel",
+      "api-gateway",
+      "env-registry",
+      "executor-registry",
+      "executor_docker_openhands",
+      "executor_k8s_openhands",
+      "model-registry"
+    ],
+    "svc/task-manager/schemas/ui.cancel.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.cancel.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.get-archived-task.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.get-archived-task.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.get-task.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.get-task.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-archive.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-archive.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-attempts.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-attempts.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-executor-tasks.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-executor-tasks.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-tasks.reply.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/task-manager/schemas/ui.list-tasks.request.schema.json": [
+      "task-manager",
+      "api-gateway"
+    ],
+    "svc/team-registry/schemas/error.reply.schema.json": [
+      "team-registry",
+      "admin-panel",
+      "api-gateway",
+      "env-registry",
+      "executor-registry",
+      "flow-registry",
+      "journal",
+      "model-registry",
+      "source-controller",
+      "task-manager"
+    ],
+    "svc/team-registry/schemas/service.get.reply.schema.json": [
+      "team-registry",
+      "admin-panel",
+      "api-gateway",
+      "env-registry",
+      "executor-registry",
+      "flow-registry",
+      "journal",
+      "model-registry",
+      "source-controller",
+      "task-manager"
+    ],
+    "svc/team-registry/schemas/service.get.request.schema.json": [
+      "team-registry",
+      "admin-panel",
+      "api-gateway",
+      "env-registry",
+      "executor-registry",
+      "flow-registry",
+      "journal",
+      "model-registry",
+      "source-controller",
+      "task-manager"
+    ]
+  }
+}
